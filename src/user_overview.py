@@ -3,10 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-def load_data(path):
-    """Takes path to location of the csv file and import it with """
-    return pd.read_csv(path)
-
 def clean_data(df):
     """Takes dataframe and returns cleaned data"""
     df=df.dropna(subset=['Start', 'Start ms', 'End', 'End ms', "Bearer Id", "Avg Bearer TP DL (kbps)","Avg Bearer TP UL (kbps)", "Activity Duration DL (ms)",

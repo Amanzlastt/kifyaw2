@@ -3,8 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def load_data(path):
-    return pd.read_csv(path)
+
 
 def top_10(df,column):
     """takes dataframe and clumn name and returns top 10 of the given column using nlargest function""" 
