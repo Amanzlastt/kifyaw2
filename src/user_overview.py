@@ -60,9 +60,3 @@ def heatmap(corr_matrics):
     plt.title('Correlation Matrix of Application Data')
     return plt
 
-def wcss_plot(wcss):
-    plt.plot(range(1, 10), wcss)
-    plt.title('Elbow Method for Optimal k')
-    plt.xlabel('Number of clusters (k)')
-    plt.ylabel('WCSS')
-    return plt
